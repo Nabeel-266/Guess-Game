@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- BoxIcons  -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="modal hidden">
+        <button class="close"><i class="fa-solid fa-xmark"></i></button>
+        <h2>Help</h2>
+        <ul>
+            <li>Select a number between 1 to 100</li>
+            <li>Enter your select number in Input Area</li>
+            <li>Check a number through check button</li>
+            <li>If your guessed number is not correct</li>
+            <li>So take a hint from 'Hint & Message Section'</li>
+            <li>And guess a right number under only ten chances</li>
+        </ul>
+        <p>SO! lets play the game and guess a Right Number</p>
+    </div>
+    <div class="main">
+        <div class="main-area">
+            <div class="overlay hidden"></div>
+
+            <div class="center-area">
+
+                <div class="top-butn">
+                    <span class="restart">
+                        <abbr title="Restart">
+                            <i class="fa-sharp fa-solid fa-rotate-right"></i>
+                        </abbr>
+                    </span>
+                    <span class="tips">
+                        <abbr title="Tips">
+                            <i class="fa-solid fa-circle-question"></i>
+                        </abbr>
+                    </span>
+                </div>
+
+                <div class="hd">
+                    <h1>Guess a Number</h1>
+                    <h2>{ between 1 to 100 }</h2>
+                </div>
+
+                <div class="hint">
+                    <div class="hint-box">
+                        <h2>" Hints & Messages "</h2>
+                        <p class="hint-txt">First You will Entered a Number and Guess it !</p>
+                    </div>
+                </div>
+
+                <div class="inputs">
+                    <input type="number" class="userInput" placeholder="Enter a Guess Number" required>
+                    <button class="checkButton">Check</button>
+                </div>
+
+                <div class="instruction">
+                    <p>You have <span class="chances">10</span> Chances</p>
+                </div>
+
+                <div class="expressions">
+                    <h1 class="expression">Congratulations</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
